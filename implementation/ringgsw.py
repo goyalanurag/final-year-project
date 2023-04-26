@@ -17,8 +17,8 @@ class RingGSW:
         
         var('x')
         assert self.Rq.modulus() == self.Rq(x**self.n + 1)
-        assert all([self.q > 1, floor(log2(self.q)) == ceil(log2(self.q))])
-        assert all([self.n > 1, floor(log2(self.q)) == ceil(log2(self.q))])
+        assert all([self.q > 1, 1 << floor(log2(self.q)) == self.q])
+        assert all([self.n > 1, 1 << floor(log2(self.n)) == self.n])
 
         self.k = ceil(log2(self.q))
         self.N = self.k << 1

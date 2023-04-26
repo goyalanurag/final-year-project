@@ -10,8 +10,8 @@ class RingGSWOTTests:
     
     def __init__(self, q, n, sigma=5):
 
-        assert all([q > 1, floor(log2(q)) == ceil(log2(q))])
-        assert all([n > 1, floor(log2(n)) == ceil(log2(n))])
+        assert all([q > 1, 1 << floor(log2(q)) == q])
+        assert all([n > 1, 1 << floor(log2(n)) == n])
         
         self.k = ceil(log2(q))
         self.sigma = sigma
