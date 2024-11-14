@@ -11,8 +11,8 @@ the LWE hard problem. We use the GSW scheme to construct its ring variant (RGSW)
 based on the RLWE hard problem. We further use the RGSW scheme along with the
 generic construction proposed in to construct these post-quantum secure protocols:
 
-### 1-out-of-2 OT
-![](./documents/OT-1-2_flow_digram.png)
+### 1 out of 2 OT
+![](./documents/OT-1-2_flow_diagram.png)
 
-###  and 1-out-of-n OT
-![](./documents/ot-1-N_flow_diagram.png)
+### 1 out of N transfer
+![](./documents/OT-1-n_flow_diagram.png)
